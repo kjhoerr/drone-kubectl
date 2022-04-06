@@ -1,4 +1,5 @@
-FROM bitnami/kubectl:1.16
+ARG KUBECTL_TAG=latest
+FROM bitnami/kubectl:$KUBECTL_TAG
 
 LABEL maintainer "Sinlead <opensource@sinlead.com>"
 
